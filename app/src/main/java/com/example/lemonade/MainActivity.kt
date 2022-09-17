@@ -121,19 +121,19 @@ class MainActivity : AppCompatActivity() {
 
         when (lemonadeState) {
             SELECT -> {
-                textAction.text = "Click to select a lemon!"
+                textAction.setText(R.string.lemon_select)
                 imageLemonState.setImageResource(R.drawable.lemon_tree)
             }
             SQUEEZE -> {
-                textAction.text = "Click to juice the lemon!"
+                textAction.setText(R.string.lemon_squeeze)
                 imageLemonState.setImageResource(R.drawable.lemon_squeeze)
             }
             DRINK -> {
-                textAction.text = "Click to drink your lemonade!"
+                textAction.setText(R.string.lemon_drink)
                 imageLemonState.setImageResource(R.drawable.lemon_drink)
             }
             RESTART -> {
-                textAction.text = "Click to start again!"
+                textAction.setText((R.string.lemon_empty_glass))
                 imageLemonState.setImageResource(R.drawable.lemon_restart)
             }
         }
